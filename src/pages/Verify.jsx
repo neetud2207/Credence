@@ -17,7 +17,7 @@ const Verify = () => {
     const cleanedInput = certificateId.trim()
 
     const found = certificates.find((item) =>
-  item.certificateId.includes(cleanedInput)
+  item.certificateId === cleanedInput
 )
 
     console.log('Found Certificate:', found)
