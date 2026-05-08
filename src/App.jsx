@@ -3,6 +3,7 @@ import { Toaster } from 'react-hot-toast'
 
 import Navbar from './components/Navbar'
 
+
 import Home from './pages/Home'
 import Verify from './pages/Verify'
 
