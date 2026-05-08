@@ -1,3 +1,11 @@
+body {
+  background: linear-gradient(to bottom right, #020617, #0f172a, #111827);
+  min-height: 100vh;
+  color: white;
+}
+#root {
+  min-height: 100vh;
+}
 .counter {
   font-size: 16px;
   padding: 5px 10px;
