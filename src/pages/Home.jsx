@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import API from '../services/api'
 import CertificateForm from '../components/CertificateForm'
 import CertificatePreview from '../components/CertificatePreview'
 import HistoryPanel from '../components/HistoryPanel'
@@ -41,43 +40,28 @@ const Home = () => {
     setCertificates(getCertificates())
   }, [])
 
-  const handleGenerate = async () => {
+  const handleGenerate = () => {
 
-  try {
-
-    const newCertificate = {
-      ...formData,
-      certificateId,
-      template: selectedTemplate,
-      createdAt: new Date().toISOString(),
-    }
-
-    const response = await API.post(
-      '/certificates',
-      newCertificate
-    )
-
-    setCertificates([
-      response.data,
-      ...certificates,
-    ])
-
-    alert(
-      'Certificate generated successfully!'
-    )
-
-    setCertificateId(
-      generateCertificateId()
-    )
-
-  } catch (error) {
-
-    console.log(error)
-
-    alert(
-      'Failed to generate certificate'
-    )
+  const newCertificate = {
+    ...formData,
+    certificateId,
+    template: selectedTemplate,
+    createdAt: new Date().toISOString(),
   }
+
+  saveCertificate(newCertificate)
+
+  setCertificates(
+    getCertificates()
+  )
+
+  alert(
+    'Certificate generated successfully!'
+  )
+
+  setCertificateId(
+    generateCertificateId()
+  )
 }
 
   const filteredCertificates =
