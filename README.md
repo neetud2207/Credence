@@ -59,7 +59,7 @@ https://credence-blue.vercel.app
 ### Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Credence.git
+git clone https://github.com/neetu2207/Credence.git
 ```
 
 ### Frontend Setup
@@ -84,7 +84,7 @@ node server.js
 Create a `.env` file inside `server/`
 
 ```env
-MONGO_URI=your_mongodb_connection_string
+MONGO_URI=mongodb://nithyassri07_db_user:neetu%40mdb@ac-nplmvyu-shard-00-00.rme0wse.mongodb.net:27017,ac-nplmvyu-shard-00-01.rme0wse.mongodb.net:27017,ac-nplmvyu-shard-00-02.rme0wse.mongodb.net:27017/?ssl=true&replicaSet=atlas-kby4yx-shard-0&authSource=admin&appName=Cluster0
 ```
 
 ---
