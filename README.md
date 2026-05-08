@@ -1,16 +1,137 @@
-# React + Vite
+# 🎓 Credence Certificate Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern full-stack certificate generation platform built using React, Vite, Tailwind CSS, Node.js, Express, and MongoDB.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+https://credence-blue.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Dynamic certificate generation
+- Multiple certificate templates
+- Unique certificate ID generation
+- Certificate verification system
+- Downloadable certificate preview
+- Admin/history panel
+- Responsive modern UI
+- QR-ready certificate structure
+- MongoDB backend integration
+- Full-stack architecture
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- Tailwind CSS
+- Framer Motion
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+
+### Deployment
+- Vercel
+- GitHub
+
+---
+
+## 📸 Screenshots
+
+### Home Page
+- Certificate form
+- Live preview
+- Template selection
+
+### Verification Page
+- Verify certificates using unique certificate ID
+
+---
+
+## ⚙️ Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/Credence.git
+```
+
+### Frontend Setup
+
+```bash
+npm install
+npm run dev
+```
+
+### Backend Setup
+
+```bash
+cd server
+npm install
+node server.js
+```
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env` file inside `server/`
+
+```env
+MONGO_URI=your_mongodb_connection_string
+```
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+ ├── components
+ ├── pages
+ ├── services
+ ├── utils
+ ├── data
+
+server/
+ ├── models
+ ├── routes
+ ├── server.js
+```
+
+---
+
+## 🎯 Project Objective
+
+This project was built to automate certificate generation and verification for internships, events, and NGO programs while demonstrating:
+
+- Backend logic
+- File generation workflow
+- Full-stack integration
+- Deployment pipeline
+- Database connectivity
+- Automation systems
+
+---
+
+## 📌 Future Improvements
+
+- User authentication
+- Email certificate delivery
+- PNG/JPEG export
+- Cloudinary integration
+- Advanced admin dashboard
+- Backend deployment
+- Real-time verification API
+
+---
+
+## 👩‍💻 Author
+
+Developed by Madhumitha Dhanaraj
