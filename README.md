@@ -134,4 +134,4 @@ This project was built to automate certificate generation and verification for i
 
 ## 👩‍💻 Author
 
-Developed by Madhumitha Dhanaraj
+Developed by Nithyassri Dhanaraj
